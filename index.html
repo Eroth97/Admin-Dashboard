@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+  </style>
+
   <title>Admin Dashboard</title>
 </head>
 <body>
@@ -28,19 +33,54 @@
   </div>
 
   <div class="sidebar">
-    <h2>Dashboard</h2>
-    <div>
-      <p>Home</p>
-      <p>Profile</p>
-      <p>Messages</p>
-      <p>History</p>
-      <p>Tasks</p>
-      <p>Communities</p>
+    <div id="dashboard">
+      <img src="./Icons/pencil-svgrepo-com.svg" alt="paper-plane">
+      <h2>Dashboard</h2>
+      <div class="line"></div>
     </div>
-    <div>
-      <p>Settings</p>
-      <p>Support</p>
-      <p>Privacy</p>
+    
+    <div id="sidebar-options">
+      <div>
+        <div class="image-option">
+          <img src="./Icons/home.png" alt="house">
+          <p>Home</p>
+        </div>
+        <div class="image-option">
+          <img src="./Icons/card-bulleted-outline.png" alt="bulleted-card">
+          <p>Profile</p>
+        </div>
+        <div class="image-option">
+          <img src="./Icons/message-outline.png" alt="letter">
+          <p>Messages</p>
+        </div>
+        <div class="image-option">
+          <img src="./Icons/alarm-check.png" alt="clock">
+          <p>History</p>
+        </div>
+        <div class="image-option">
+          <img src="./Icons/note-alert-outline.png" alt="paper">
+          <p>Tasks</p>
+        </div>
+        <div class="image-option">
+          <img src="./Icons/account-multiple.png" alt="people">
+          <p>Communities</p>
+        </div>
+        <div class="line"></div>
+      </div>
+      <div>
+        <div class="image-option">
+          <img src="./Icons/cog-outline.png" alt="cog">
+          <p>Settings</p>
+        </div>
+        <div class="image-option">
+          <img src="./Icons/account-question-outline.png" alt="person with question mark">
+          <p>Support</p>
+        </div>
+        <div class="image-option">
+          <img src="./Icons/account-lock-outline.png" alt="person with a lock">
+          <p>Privacy</p>
+        </div>         
+      </div>
     </div>
   </div>
 
