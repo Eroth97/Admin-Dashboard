@@ -1,5 +1,7 @@
 :root{
-  --main-blue: #0d6efd;
+  --white-font: whitesmoke;
+  --lightest-gray: #adb5bd;
+  --darkest-gray: #212529;
 }
 
 body{
@@ -7,29 +9,86 @@ body{
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
   height: 100vh;
-  gap: 1rem;
 }
 
 body div{
   padding: 4px;
 }
 
+div h6, div p, div h3{
+  margin: 0;
+}
+
+/* header */
 .header{
   grid-column: 2/3;
+  background-color: var(--lightest-gray);
+  color: var(--white-font);
+  padding: 1rem;
+  display: grid;
+  gap: 0.5rem
 }
 
 .search, .user{
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
   grid-auto-rows: 1.5rem;
+  align-items: center;
+}
+
+.user{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 1.5fr;
+}
+
+#search-bar{
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+}
+
+.header input{
+  border-radius: 8px;
+  border: none;
+}
+
+.icons{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+}
+
+.header p{
+  margin-left: 0.5rem;
+}
+
+#user-message{
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  align-items: center;
+}
+
+.user ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  justify-items: center;
+  gap: 4px;
+}
+
+button{
+  border-radius: 8px;
+  width: 4rem;
+  height: 1.5rem;
+  border: solid 2px var(--darkest-gray);
+  background-color: var(--white-font);
 }
 
 /* Sidebar */
 .sidebar{
-  background-color: #212529;
-  color: whitesmoke;
+  background-color: var(--darkest-gray);
+  color: var(--white-font);
   grid-row: 1/3;
   display: grid;
   grid-template-rows: 1fr 8fr;
@@ -51,6 +110,8 @@ body div{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
 }
+
+
 
 /* Main content */
 .main-content{
