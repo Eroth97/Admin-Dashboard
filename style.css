@@ -1,6 +1,7 @@
 :root{
   --white-font: whitesmoke;
   --lightest-gray: #adb5bd;
+  --medium--gray: #495057;
   --darkest-gray: #212529;
 }
 
@@ -115,13 +116,45 @@ button{
 
 /* Main content */
 .main-content{
+  background-color: var(--medium--gray);
+  color: var(--white-font);
   grid-column: 2/3;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
+  padding: 1rem;
+}
+
+.project-tab{
+  grid-row: 1/3;
 }
 
 .projects{
-  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 0.5rem;
+}
+
+#projects-title{
+  grid-column: 1/-1;
+}
+
+.cool-project{
+  border: 1px solid var(--darkest-gray);
+  border-radius: 8px;
+  background-color: var(--lightest-gray);
+  color: var(--darkest-gray);
+  width: 10rem;
+  height: 10rem;
+}
+
+.announcements, .trends{
+  border: 1px solid var(--darkest-gray);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.announcements .line{
+  margin-left: 5%;
 }
 
 /* This CSS is just to see how functionality is working */
@@ -136,7 +169,7 @@ button{
 
 .line{
   border-top: 1px solid white;
-  width: 16rem;
+  width: 90%;
   grid-column: 1/-1;
 }
 
