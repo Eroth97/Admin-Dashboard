@@ -26,7 +26,7 @@ div h6, div p, div h3{
 .header{
   grid-column: 2/3;
   background-color: var(--lightest-gray);
-  color: var(--white-font);
+  color: var(--darkest-gray);
   padding: 1rem;
   display: grid;
   gap: 0.5rem
@@ -84,6 +84,12 @@ button{
   height: 1.5rem;
   border: solid 2px var(--darkest-gray);
   background-color: var(--white-font);
+  font-family: 'Abyssinica SIL', serif;
+}
+
+button:hover{
+  background-color: var(--medium--gray);
+  color: var(--white-font);
 }
 
 /* Sidebar */
@@ -112,6 +118,10 @@ button{
   grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
 }
 
+.image-option p:hover{
+  text-decoration-line: underline;
+}
+
 
 
 /* Main content */
@@ -131,7 +141,7 @@ button{
 .projects{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 #projects-title{
@@ -145,6 +155,11 @@ button{
   color: var(--darkest-gray);
   width: 10rem;
   height: 10rem;
+  align-items: center;
+}
+
+.cool-project:hover{
+  transform: scale(1.1);
 }
 
 .announcements, .trends{
