@@ -172,10 +172,16 @@ button:hover{
 
 .cool-project:hover{
   transform: scale(1.1);
+  border: 2px solid var(--darkest-gray);
 }
 
 .announcements .line{
   margin-left: 5%;
+}
+
+.trends{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 /* This CSS is just to see how functionality is working */
