@@ -22,6 +22,15 @@ div h6, div p, div h3{
   margin: 0;
 }
 
+.lorem-ipsum h4{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.lore-paragraph:hover{
+  text-decoration-line: underline;
+}
+
 /* header */
 .header{
   grid-column: 2/3;
@@ -81,7 +90,7 @@ div h6, div p, div h3{
 button{
   border-radius: 8px;
   width: 4rem;
-  height: 1.5rem;
+  height: 2rem;
   border: solid 2px var(--darkest-gray);
   background-color: var(--white-font);
   font-family: 'Abyssinica SIL', serif;
@@ -148,24 +157,21 @@ button:hover{
   grid-column: 1/-1;
 }
 
-.cool-project{
+.cool-project, .announcements, .trends{
   border: 1px solid var(--darkest-gray);
   border-radius: 8px;
   background-color: var(--lightest-gray);
   color: var(--darkest-gray);
+  text-align: center;
+}
+
+.cool-project{
   width: 10rem;
   height: 10rem;
-  align-items: center;
 }
 
 .cool-project:hover{
   transform: scale(1.1);
-}
-
-.announcements, .trends{
-  border: 1px solid var(--darkest-gray);
-  border-radius: 4px;
-  text-align: center;
 }
 
 .announcements .line{
@@ -184,6 +190,12 @@ button:hover{
 
 .line{
   border-top: 1px solid white;
+  width: 90%;
+  grid-column: 1/-1;
+}
+
+.dark-line{
+  border-top: 1px solid black;
   width: 90%;
   grid-column: 1/-1;
 }
